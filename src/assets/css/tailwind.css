@@ -1,0 +1,73 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@layer utilities {
+   @variants responsive{
+        .cash-dash{
+            width:258px;
+            height:129px;
+        }
+        .card-border{
+            border-radius: 6px;
+        }
+        .card-boxShadow{
+            box-shadow: 0px 4px 30px rgba(192, 192, 192, 0.25);
+        }
+        .borderLineStyle{
+            border-style:dotted;
+        }
+
+        .asb-theme-light{
+            --sl-background-scaffold: #ffffff;
+            --sl-background-primary: #FFFFFF;
+            --sl-background-secondary: #F3F6F9; 
+            --sl-background-accent: #D8D8D8; 
+            --sl-background-neutral: #9F9F9F; 
+            /* ------ TEXT CUSTOM COLOR VAR ------*/
+            --sl-color-primary:#19191D;
+            --sl-color-secondary:#778699;
+            --sl-color-deep:#000000;
+            /* --- ACCENT LIST TEXT STYLE --- */
+            --sl-color-5:#B4B4BB;
+            --sl-color-10:#9696A0;
+            --sl-color-20:#899198;
+            --sl-color-30:#25213B;
+            --sl-color-40:#878592;  
+
+            --sl-color-50:#0F1A4F;
+            --sl-color-60:#747474;
+            --sl-color-70:#A1AACE;
+            --sl-color-80:#C4C4C4;
+            --sl-color-90:#72809D;  
+
+            /* ---- BORDER COLOR STYLE ---*/
+            --sl-border-accent: #DCE1E7;
+
+        }
+
+  }
+
+   
+
+}
+
+@layer components {
+    .header-button{
+        @apply flex items-center p-4 focus:outline-none space-x-2;
+    }
+    .header-active-button{
+        @apply border-b-4 border-active-blue text-active-blue bg-active-bg-blue font-semibold;
+    }
+    .header-inactive-button{
+        @apply text-secondary font-normal;
+    }
+    .card-track-dash{
+        @apply flex flex-row items-center justify-between p-5;
+    }
+ 
+ }
+ 
+

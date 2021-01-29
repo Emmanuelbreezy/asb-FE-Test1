@@ -21,7 +21,7 @@ export const TopLayer = (props:any) => {
             </ul>
           </div>
           <div className="w-full flex-1 mt-4">
-             <ul className="w-full flex flex-col items-center space-y-3  lg:flex-row  lg:space-x-6">
+             <ul className="w-full  flex flex-col space-y-4 space-x-0 lg:space-y-0   lg:flex-row items-center lg:space-x-6">
                  <li className="w-full">
                     <CardItem digitNum={'32456'} terms={'Ongoing metric'} />
                  </li>

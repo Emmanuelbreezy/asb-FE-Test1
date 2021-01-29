@@ -6,9 +6,14 @@ export const Header = (props:any) => {
 
     return (
       <div className="relative z-50 mb-14 ">
-          <div className="fixed w-full shadow-sm flex flex-row items-center justify-between bg-background-primary">
+          <div className="fixed w-full shadow-sm flex flex-row items-center
+             justify-between bg-background-primary">
               <div className="flex-1 flex items-center justify-start space-x-12">
-                <div className="flex items-center space-x-1 pl-4">
+                <div className=" flex items-center space-x-1 pl-4">
+                <svg xmlns="http://www.w3.org/2000/svg" className="w-5 cursor-pointer h-5 lg:hidden fill-current mr-3" viewBox="0 0 24 24">
+                    <path fill-rule="evenodd" d="M22,17 L22,19 L2,19 L2,17 L22,17 Z M22,11 L22,13 L2,13 L2,11 L22,11 Z M22,5 L22,7 L2,7 L2,5 L22,5 Z"/>
+                </svg>
+
                   <img className="w-6 h-6" src={logo}  />
                   <h2 className="hidden sm:hidden md:flex text-logo font-bold ">FE Engineer Test</h2>
                 </div>

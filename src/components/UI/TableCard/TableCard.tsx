@@ -6,8 +6,8 @@ type TableCardProps = {
 }
 export const TableCard = (props:TableCardProps) => {
     return(
-        <div className="flex flex-col bg-background-primary card-boxShadow">
-               <div className="w-full overflow-x-auto">
+        <div className="flex flex-col w-full bg-background-primary card-boxShadow">
+               <div className="overflow-x-auto">
                    <table className="w-full">
                        <thead className="w-full bg-background-secondary">
                           <tr className="text-left">
